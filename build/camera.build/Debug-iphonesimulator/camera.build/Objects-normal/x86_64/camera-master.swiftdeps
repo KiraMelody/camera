@@ -1,0 +1,7 @@
+version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
+options: "b66763071e7f28f2b4b47e3ff30c60e3"
+build_time: [509620823, 371417000]
+inputs:
+  "/Users/apple/Developer/camera/camera/AppDelegate.swift": [509370672, 0]
+  "/Users/apple/Developer/camera/camera/Image.swift": [9223372036854775807, 0]
+  "/Users/apple/Developer/camera/camera/ViewController.swift": [509620823, 0]

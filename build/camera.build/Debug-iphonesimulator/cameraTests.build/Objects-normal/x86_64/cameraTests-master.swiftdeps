@@ -1,0 +1,5 @@
+version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
+options: "cd6fe092fd0b809423dc15db12717b0d"
+build_time: [509434663, 4328000]
+inputs:
+  "/Users/apple/Developer/camera/cameraTests/cameraTests.swift": [509370672, 0]

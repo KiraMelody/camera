@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18B098FE1C7DAD5600EE0BD8 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B098FD1C7DAD5600EE0BD8 /* Image.swift */; };
 		18FD19881C79DC3000EBB0CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FD19871C79DC3000EBB0CC /* AppDelegate.swift */; };
 		18FD198A1C79DC3000EBB0CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FD19891C79DC3000EBB0CC /* ViewController.swift */; };
 		18FD198D1C79DC3000EBB0CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18FD198B1C79DC3000EBB0CC /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18B098FD1C7DAD5600EE0BD8 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		18FD19821C79DC3000EBB0CC /* camera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = camera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18FD19861C79DC3000EBB0CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18FD19871C79DC3000EBB0CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			children = (
 				18FD19871C79DC3000EBB0CC /* AppDelegate.swift */,
 				18FD19891C79DC3000EBB0CC /* ViewController.swift */,
+				18B098FD1C7DAD5600EE0BD8 /* Image.swift */,
 				18FD198B1C79DC3000EBB0CC /* Main.storyboard */,
 				18FD198E1C79DC3000EBB0CC /* Images.xcassets */,
 				18FD19901C79DC3000EBB0CC /* LaunchScreen.xib */,
@@ -156,11 +159,14 @@
 		18FD197A1C79DC3000EBB0CC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = KiraMelody;
 				TargetAttributes = {
 					18FD19811C79DC3000EBB0CC = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 64VC6J8U2G;
 					};
 					18FD19961C79DC3000EBB0CC = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -213,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18FD198A1C79DC3000EBB0CC /* ViewController.swift in Sources */,
+				18B098FE1C7DAD5600EE0BD8 /* Image.swift in Sources */,
 				18FD19881C79DC3000EBB0CC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +283,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -342,8 +350,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = camera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.world.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -352,8 +362,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = camera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.world.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -372,6 +384,7 @@
 				);
 				INFOPLIST_FILE = cameraTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.world.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/camera.app/camera";
 			};
@@ -387,6 +400,7 @@
 				);
 				INFOPLIST_FILE = cameraTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.world.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/camera.app/camera";
 			};
@@ -411,6 +425,7 @@
 				18FD19A31C79DC3000EBB0CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18FD19A41C79DC3000EBB0CC /* Build configuration list for PBXNativeTarget "cameraTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +434,7 @@
 				18FD19A61C79DC3000EBB0CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
